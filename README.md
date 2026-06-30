@@ -51,7 +51,6 @@ $$T_P(\beta, \theta) = \bar{T} + B_S(\beta) + B_P(\theta)$$
 
 实现思路是先把姿态参数转成旋转矩阵，再构造：
 
-$$\text{pose\_feature} = R(\theta) - I$$
 
 随后通过 `posedirs` 线性映射得到 `pose_offsets`，并加到 `v_shaped` 上，形成 `v_posed`：
 
