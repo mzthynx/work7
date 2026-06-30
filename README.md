@@ -39,11 +39,7 @@ $$T_{shape} = \bar{T} + B_S(\beta)$$
 
 $$J(\beta) = \mathcal{J}(T_{shape})$$
 
-实现思路为：
 
-$$v_{shaped} = v_{template} + \text{blend\_shapes}(\beta, \text{shapedirs})$$
-
-$$J = \text{vertices2joints}(\text{J\_regressor}, v_{shaped})$$
 
 **关节位置不是固定常数，而是由形状后的网格回归出来的。**
 
